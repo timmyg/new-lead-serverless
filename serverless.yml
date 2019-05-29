@@ -1,0 +1,14 @@
+# serverless.yml
+service: new-lead # NOTE: update this with your service name
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment:
+    hubspotApiKey: ${env:HUBSPOT_API_KEY}
+functions:
+  newLead:
+    handler: handler.newLead
+    events:
+      - http:
+          path: lead
+          method: post

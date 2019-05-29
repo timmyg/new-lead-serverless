@@ -1,0 +1,14 @@
+{
+  "name": "new-lead-serverless",
+  "version": "1.0.0",
+  "description": "an example serverless function",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "serverless deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.44.1"
+  }
+}
