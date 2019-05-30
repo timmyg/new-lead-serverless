@@ -1,9 +1,9 @@
 // handler.js
 "use strict";
 const Hubspot = require("hubspot");
-const hubspot = new Hubspot({ apiKey: process.env.hubspotApiKey }); // more on this in step 3
+const hubspot = new Hubspot({ apiKey: process.env.hubspotApiKey });
 
-module.exports.hello = async event => {
+module.exports.newLead = async event => {
   // get email from http body
   const email = JSON.parse(event.body).email;
   // create contact in Hubspot
